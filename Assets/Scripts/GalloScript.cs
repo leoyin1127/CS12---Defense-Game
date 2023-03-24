@@ -5,44 +5,73 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class GalloScript : MonoBehaviour
 {
+    private Gallo _gallo; 
 
     public float Move;
-    public float Position;
-    public float clock;
-    public float clock_value; 
-     
+    public float MoveDown; 
+ 
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        _gallo = new Gallo(Move, MoveDown); 
         Move = 1;
-        clock_value = 1;
+        MoveDown = -1; 
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        clock += clock_value * Time.deltaTime;
-        Movement();
-    }
-
-
-    public void Movement()
-    {
-        if (clock >= 3f)
+  
+        if (Input.GetKey(KeyCode.S) == true)
         {
-            Move = -1f;
-            clock_value = -1; 
+            _gallo.MoveDown();
+            transform.position += Vector3.up * _gallo.movedown * Time.deltaTime*2;
         }
-        if (clock <= 0) 
+
+        if (Input.GetKey(KeyCode.W) == true)
         {
-            Move = 1;
-            clock_value = 1; 
+            _gallo.MoveUp();
+            transform.position += Vector3.up * _gallo.move * Time.deltaTime*2;
         }
-    transform.position += Vector3.up * Move * Time.deltaTime / 5;
+
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S) == false)
+        {
+            _gallo.Still();
+            transform.position += Vector3.up * _gallo.move * Time.deltaTime*2;
+        }
+
+            
     }
 }
 
+public class Gallo
+{
+    // Attributes
+    public float move;
+    public float movedown; 
+   
 
+    public Gallo(float Move, float MoveDown)
+    {
+        move = Move;
+        movedown = MoveDown;
+    }
+    public void MoveDown()
+    {
+        movedown = -1f;
+    }
+
+    public void MoveUp()
+    {
+        move = 1;
+    }
+    public void Still()
+    {
+        move = 0; 
+    }
+
+}
 
