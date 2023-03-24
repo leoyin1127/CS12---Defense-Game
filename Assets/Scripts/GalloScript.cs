@@ -21,8 +21,6 @@ public class GalloScript : MonoBehaviour
         _gallo = new Gallo(Move, MoveDown); 
         Move = 1f;
         MoveDown = -1f;
-        Xpos = this.transform.position.x;
-        Ypos = this.transform.position.y;
     }
 
 

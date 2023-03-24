@@ -19,8 +19,8 @@ public class ScreenRipple : MonoBehaviour
         cam = GetComponent<Camera>();
         ZoomChange = 0.25f;
         SmoothChange = 1f;
-        Minsize = 4.85f;
-        Maxsize = 4.95f;
+        Minsize = 5.02f;
+        Maxsize = 5.08f;
 
     }
 
