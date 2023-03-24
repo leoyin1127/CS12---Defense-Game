@@ -8,7 +8,10 @@ public class GalloScript : MonoBehaviour
     private Gallo _gallo; 
 
     public float Move;
-    public float MoveDown; 
+    public float MoveDown;
+    public float Xpos;
+    public float Ypos; 
+
  
     
 
@@ -16,21 +19,31 @@ public class GalloScript : MonoBehaviour
     void Start()
     {
         _gallo = new Gallo(Move, MoveDown); 
-        Move = 1;
-        MoveDown = -1; 
+        Move = 1f;
+        MoveDown = -1f;
+        Xpos = this.transform.position.x;
+        Ypos = this.transform.position.y;
     }
 
 
-    // Update is called once per frame
+    // Update is called once per frame  
     void Update()
     {
-  
+        if (transform.position.y > 3.82f)
+        {
+            transform.position = new Vector3(transform.position.x, 3.82f, -12);
+        }
+        if (transform.position.y < -3.82f)
+        {
+            transform.position = new Vector3(transform.position.x, -3.82f, -12);
+        }
+
         if (Input.GetKey(KeyCode.S) == true)
         {
             _gallo.MoveDown();
             transform.position += Vector3.up * _gallo.movedown * Time.deltaTime*2;
         }
-
+      
         if (Input.GetKey(KeyCode.W) == true)
         {
             _gallo.MoveUp();
@@ -66,11 +79,11 @@ public class Gallo
 
     public void MoveUp()
     {
-        move = 1;
+        move = 1f;
     }
     public void Still()
     {
-        move = 0; 
+        move = 0f; 
     }
 
 }

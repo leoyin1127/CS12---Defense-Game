@@ -17,6 +17,14 @@ public class BulletScript : MonoBehaviour
 
     private void Update()
     {
+        if (transform.position.y > 3.82f)
+        {
+            transform.position = new Vector3(transform.position.x, 3.82f, -12);
+        }
+        if (transform.position.y < -3.82f)
+        {
+            transform.position = new Vector3(transform.position.x, -3.82f, -12);
+        }
         clock += 1f * Time.deltaTime;
         Timer();
     }
