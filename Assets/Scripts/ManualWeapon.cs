@@ -26,11 +26,11 @@ public class ManualWeapon : MonoBehaviour
         // Boundary 
         if (transform.position.y > 3.82f)
         {
-            transform.position = new Vector3(transform.position.x, 3.82f, -12);
+            transform.position = new Vector3(transform.position.x, 3.82f, -10);
         }
         if (transform.position.y < -3.82f)
         {
-            transform.position = new Vector3(transform.position.x, -3.82f, -12);
+            transform.position = new Vector3(transform.position.x, -3.82f, -10);
         }
 
 
