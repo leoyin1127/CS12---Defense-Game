@@ -8,12 +8,14 @@ public class ManualWeapon : MonoBehaviour
 
     public Transform FirePoint;
     public GameObject BulletPrefab;
-    public float timer; 
+    public float timer;
+    public float cooldown; 
      
 
     void Start()
     {
-        timer = 0f; 
+        timer = 0f;
+        cooldown = 0.5f; 
     }
 
     // Update is called once per frame
@@ -35,7 +37,7 @@ public class ManualWeapon : MonoBehaviour
 
 
         // Fire Bullet
-        if (Input.GetButton("Fire1") && timer >= 1f)
+        if (Input.GetButton("Fire1") && timer >= cooldown)
         {
             Shoot();
             timer = 0f; 
