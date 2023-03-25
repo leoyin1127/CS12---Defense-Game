@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     public float Position;
     public float clock;
     public float clock_value;
+    public float speed = 2f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +44,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void Movement() {
 
-        transform.position += Vector3.right * 1 * Time.deltaTime / 3;
+        transform.position += Vector3.right * speed * Time.deltaTime / 3;
     }
 
 
