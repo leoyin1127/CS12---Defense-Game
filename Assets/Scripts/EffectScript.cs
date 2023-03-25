@@ -20,7 +20,7 @@ public class EffectScript : MonoBehaviour
 
     void Timer()
     {
-        if (clock >= 0.25f)
+        if (clock >= 0.4f)
         {
             Destroy(gameObject); 
         }
