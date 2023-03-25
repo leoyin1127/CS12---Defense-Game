@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject Enemy;
     public float spawnrate = 1f;
     private float timer = 0;
-    public float HeightOffSet = 3.85f;
+    public float HeightOffSet = 3.78f;
   
 
 
