@@ -8,11 +8,13 @@ public class BulletScript : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     private float clock;
+    public int damage = 40;
+    public GameObject impactEffect; 
 
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.right * speed;  
+        rb.velocity = transform.right * speed;
     }
 
     private void Update()
@@ -32,7 +34,13 @@ public class BulletScript : MonoBehaviour
     private void OnTriggerEnter2D (Collider2D hitInfo)
     {
         Debug.Log(hitInfo.name); 
-        Destroy(gameObject); 
+        EnemyValues enemy = hitInfo.GetComponent<EnemyValues>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage); 
+        }
+        Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 
     void Timer()
