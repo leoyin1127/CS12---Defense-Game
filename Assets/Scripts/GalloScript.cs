@@ -9,11 +9,6 @@ public class GalloScript : MonoBehaviour
 
     public float Move;
     public float MoveDown;
-    public float Xpos;
-    public float Ypos; 
-
- 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -39,19 +34,19 @@ public class GalloScript : MonoBehaviour
         if (Input.GetKey(KeyCode.S) == true)
         {
             _gallo.MoveDown();
-            transform.position += Vector3.up * _gallo.movedown * Time.deltaTime*2;
+            transform.position += Vector3.up * _gallo.movedown * Time.deltaTime*4;
         }
       
         if (Input.GetKey(KeyCode.W) == true)
         {
             _gallo.MoveUp();
-            transform.position += Vector3.up * _gallo.move * Time.deltaTime*2;
+            transform.position += Vector3.up * _gallo.move * Time.deltaTime*4;
         }
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S) == false)
         {
             _gallo.Still();
-            transform.position += Vector3.up * _gallo.move * Time.deltaTime*2;
+            transform.position += Vector3.up * _gallo.move * Time.deltaTime*4;
         }
 
             
