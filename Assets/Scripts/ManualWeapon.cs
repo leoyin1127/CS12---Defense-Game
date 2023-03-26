@@ -15,7 +15,7 @@ public class ManualWeapon : MonoBehaviour
     void Start()
     {
         timer = 0f;
-        cooldown = 0.3f;
+        cooldown = 0.4f;
     }
 
     // Update is called once per frame
