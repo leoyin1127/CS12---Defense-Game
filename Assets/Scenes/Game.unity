@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 738178796}
   - component: {fileID: 738178795}
   m_Layer: 0
-  m_Name: EnemySpawner 2
+  m_Name: SpeedySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -907,8 +907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa8021aaea1e43dcbbdb3167fafd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 1055893238156871857, guid: be8f7b9e2312e4c11a95e97088145769, type: 3}
-  spawnrate: 1.5
+  Enemy: {fileID: 6993224368655370009, guid: c87c8142bd1ef4949bd49827f761c5a1, type: 3}
+  spawnrate: 4.5
   HeightOffSet: 3.85
   CountDown: 91
 --- !u!4 &738178796
