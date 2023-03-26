@@ -7,7 +7,7 @@ using UnityEngine;
 public class EnemyValues : MonoBehaviour
 {
 
-    public int health = 100;
+    public int health;
     public GameObject DeathEffect;
 
     public void TakeDamage(int damage)
