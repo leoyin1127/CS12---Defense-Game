@@ -702,7 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1055893238156871857, guid: be8f7b9e2312e4c11a95e97088145769, type: 3}
   spawnrate: 2
-  Size: 3
+  HeightOffSet: 3.85
 --- !u!4 &634314167
 Transform:
   m_ObjectHideFlags: 0
