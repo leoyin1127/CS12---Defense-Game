@@ -16,7 +16,11 @@ public class ManualWeapon : MonoBehaviour
     {
         timer = 0f;
 <<<<<<< HEAD
+<<<<<<< HEAD
         cooldown = 0.5f; 
+=======
+        cooldown = 0.4f;
+>>>>>>> parent of e6662f0 (Merge)
 =======
         cooldown = 0.4f;
 >>>>>>> parent of e6662f0 (Merge)

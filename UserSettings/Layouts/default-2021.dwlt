@@ -64,9 +64,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 53
     width: 1089
     height: 668
+=======
+    y: 0
+    width: 1440
+    height: 900
+>>>>>>> parent of e6662f0 (Merge)
 =======
     y: 0
     width: 1440
@@ -224,6 +230,7 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1089
     height: 618
   m_MinSize: {x: 400, y: 200}
@@ -232,6 +239,8 @@ MonoBehaviour:
   controlID: 96
 --- !u!114 &10
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     width: 1440
     height: 850
   m_MinSize: {x: 300, y: 200}
@@ -255,10 +264,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 831
     y: 0
     width: 258
     height: 618
+=======
+    x: 1099.5
+    y: 0
+    width: 340.5
+    height: 850
+>>>>>>> parent of e6662f0 (Merge)
 =======
     x: 1099.5
     y: 0
@@ -290,8 +306,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 203
     height: 348.5
+=======
+    width: 272
+    height: 503.5
+>>>>>>> parent of e6662f0 (Merge)
 =======
     width: 272
     height: 503.5
@@ -320,9 +341,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 348.5
     width: 831
     height: 269.5
+=======
+    y: 503.5
+    width: 1099.5
+    height: 346.5
+>>>>>>> parent of e6662f0 (Merge)
 =======
     y: 503.5
     width: 1099.5
@@ -357,8 +384,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1089
     height: 668
+=======
+    width: 1440
+    height: 900
+>>>>>>> parent of e6662f0 (Merge)
 =======
     width: 1440
     height: 900
@@ -387,7 +419,11 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1089
+=======
+    width: 1440
+>>>>>>> parent of e6662f0 (Merge)
 =======
     width: 1440
 >>>>>>> parent of e6662f0 (Merge)
@@ -412,8 +448,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 648
     width: 1089
+=======
+    y: 880
+    width: 1440
+>>>>>>> parent of e6662f0 (Merge)
 =======
     y: 880
     width: 1440
@@ -441,6 +482,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 831
     height: 618
   m_MinSize: {x: 300, y: 200}
@@ -449,6 +491,8 @@ MonoBehaviour:
   controlID: 97
 --- !u!114 &17
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     width: 1099.5
     height: 850
   m_MinSize: {x: 200, y: 200}
@@ -477,6 +521,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 831
     height: 348.5
   m_MinSize: {x: 300, y: 100}
@@ -485,6 +530,8 @@ MonoBehaviour:
   controlID: 98
 --- !u!114 &18
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     width: 1099.5
     height: 503.5
   m_MinSize: {x: 200, y: 100}
@@ -508,10 +555,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 203
     y: 0
     width: 312.5
     height: 348.5
+=======
+    x: 272
+    y: 0
+    width: 827.5
+    height: 503.5
+>>>>>>> parent of e6662f0 (Merge)
 =======
     x: 272
     y: 0
@@ -617,9 +671,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 431.5
     width: 830
     height: 248.5
+=======
+    y: 533.5
+    width: 1098.5
+    height: 325.5
+>>>>>>> parent of e6662f0 (Merge)
 =======
     y: 533.5
     width: 1098.5
@@ -656,9 +716,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: d25f0000
     m_LastClickedID: 24530
     m_ExpandedIDs: 00000000ae5f000000ca9a3b
+=======
+    m_SelectedIDs: 84a20000
+    m_LastClickedID: 41604
+    m_ExpandedIDs: 00000000ae89000000ca9a3b
+>>>>>>> parent of e6662f0 (Merge)
 =======
     m_SelectedIDs: 84a20000
     m_LastClickedID: 41604
@@ -692,7 +758,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ae5f0000
+=======
+    m_ExpandedIDs: 
+>>>>>>> parent of e6662f0 (Merge)
 =======
     m_ExpandedIDs: 
 >>>>>>> parent of e6662f0 (Merge)
@@ -772,15 +842,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 831
     y: 83
     width: 257
     height: 597
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     x: 1099.5
     y: 30
     width: 339.5
     height: 829
+<<<<<<< HEAD
+>>>>>>> parent of e6662f0 (Merge)
+=======
 >>>>>>> parent of e6662f0 (Merge)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -821,9 +897,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 83
     width: 202
     height: 327.5
+=======
+    y: 30
+    width: 271
+    height: 482.5
+>>>>>>> parent of e6662f0 (Merge)
 =======
     y: 30
     width: 271
@@ -845,6 +927,9 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: e030ffffb636ffff5c8fffffd090ffffb6bdffff2ebefffffecaffff
+<<<<<<< HEAD
+>>>>>>> parent of e6662f0 (Merge)
+=======
 >>>>>>> parent of e6662f0 (Merge)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -890,15 +975,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 203
     y: 83
     width: 310.5
     height: 327.5
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     x: 272
     y: 30
     width: 825.5
     height: 482.5
+<<<<<<< HEAD
+>>>>>>> parent of e6662f0 (Merge)
+=======
 >>>>>>> parent of e6662f0 (Merge)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1157,9 +1248,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 1.5561192, y: -0.98916554, z: -2.731306}
     speed: 2
     m_Value: {x: 1.5561192, y: -0.98916554, z: -2.731306}
+=======
+    m_Target: {x: -3.0631804, y: 0.14373878, z: -0.41013274}
+    speed: 2
+    m_Value: {x: -3.0631804, y: 0.14373878, z: -0.41013274}
+>>>>>>> parent of e6662f0 (Merge)
 =======
     m_Target: {x: -3.0631804, y: 0.14373878, z: -0.41013274}
     speed: 2
@@ -1216,9 +1313,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: 7.914995
+    speed: 2
+    m_Value: 7.914995
+>>>>>>> parent of e6662f0 (Merge)
 =======
     m_Target: 7.914995
     speed: 2
@@ -1269,15 +1372,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 515.5
     y: 83
     width: 313.5
     height: 327.5
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     x: 272
     y: 30
     width: 825.5
     height: 482.5
+<<<<<<< HEAD
+>>>>>>> parent of e6662f0 (Merge)
+=======
 >>>>>>> parent of e6662f0 (Merge)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1290,7 +1399,11 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 313.5, y: 176}
+=======
+  m_TargetSize: {x: 825.5, y: 461.5}
+>>>>>>> parent of e6662f0 (Merge)
 =======
   m_TargetSize: {x: 825.5, y: 461.5}
 >>>>>>> parent of e6662f0 (Merge)
@@ -1309,15 +1422,21 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -78.375
     m_HBaseRangeMax: 78.375
     m_VBaseRangeMin: -44
     m_VBaseRangeMax: 44
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     m_HBaseRangeMin: -206.375
     m_HBaseRangeMax: 206.375
     m_VBaseRangeMin: -115.375
     m_VBaseRangeMax: 115.375
+<<<<<<< HEAD
+>>>>>>> parent of e6662f0 (Merge)
+=======
 >>>>>>> parent of e6662f0 (Merge)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -1337,10 +1456,17 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 313.5
       height: 306.5
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 156.75, y: 153.25}
+=======
+      width: 825.5
+      height: 461.5
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 412.75, y: 230.75}
+>>>>>>> parent of e6662f0 (Merge)
 =======
       width: 825.5
       height: 461.5
@@ -1354,6 +1480,7 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -78.375
       y: -76.625
       width: 156.75
@@ -1361,6 +1488,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_LastWindowPixelSize: {x: 627, y: 655}
+=======
+      x: -206.375
+      y: -115.375
+      width: 412.75
+      height: 230.75
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 1651, y: 965}
+>>>>>>> parent of e6662f0 (Merge)
 =======
       x: -206.375
       y: -115.375

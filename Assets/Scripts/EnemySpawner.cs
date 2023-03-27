@@ -8,11 +8,14 @@ public class EnemySpawner : MonoBehaviour
     public float spawnrate = 1f;
     private float timer = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public float HeightOffSet = 3.85f;
     public float CountDown = 91f;
     public bool spawn = true; 
     
 =======
+=======
+>>>>>>> parent of e6662f0 (Merge)
     public float HeightOffSet = 3.78f;
     public float CountDown;
     private bool spawn; 
@@ -36,8 +39,11 @@ public class EnemySpawner : MonoBehaviour
         Spawn();
         EndWave(); 
 <<<<<<< HEAD
+<<<<<<< HEAD
         timer += 1 * Time.deltaTime;
         Spawn(); 
+=======
+>>>>>>> parent of e6662f0 (Merge)
 =======
 >>>>>>> parent of e6662f0 (Merge)
     }

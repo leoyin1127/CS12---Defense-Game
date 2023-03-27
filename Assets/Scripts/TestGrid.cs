@@ -7,6 +7,7 @@ public class TestGrid : MonoBehaviour
     private void Start()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         grid = new Grid(7, 5, 2f, new Vector3(-5, 0));
 
     }
@@ -49,6 +50,10 @@ public class TestGrid : MonoBehaviour
         return worldPosition;
     }
 
+=======
+        Grid grid = new Grid(5, 5);
+    }
+>>>>>>> parent of e6662f0 (Merge)
 =======
         Grid grid = new Grid(5, 5);
     }

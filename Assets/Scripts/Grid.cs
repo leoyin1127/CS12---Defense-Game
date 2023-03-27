@@ -9,6 +9,7 @@ public class Grid
     private Vector3 originPosition;
     //multi-dimensional array
     private int[,] gridArray;
+<<<<<<< HEAD
 
     public int GetHeight()
     {
@@ -34,6 +35,14 @@ public class Grid
         this.width = width;
         this.height = height;
 >>>>>>> parent of e6662f0 (Merge)
+=======
+
+
+    public Grid(int width, int height)
+    {
+        this.width = width;
+        this.height = height;
+>>>>>>> parent of e6662f0 (Merge)
 
         gridArray = new int[width, height];
 
@@ -45,6 +54,7 @@ public class Grid
                 Debug.Log(x + ", " + y);
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         UnityEngine.Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
         UnityEngine.Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
@@ -93,6 +103,8 @@ public class Grid
         else
         {
             UnityEngine.Debug.LogError("debugTextArray is null");
+=======
+>>>>>>> parent of e6662f0 (Merge)
 =======
 >>>>>>> parent of e6662f0 (Merge)
         }
