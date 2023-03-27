@@ -9,17 +9,29 @@ public class Grid
 {
     private int width;
     private int height;
+    private Vector3 originPosition;
     //multi-dimensional array
     private int[,] gridArray;
     private float cellSize;
     private TextMesh[,] debugTextArray;
 
+    public int GetHeight()
+    {
+        return height;
+    }
 
-    public Grid(int width, int height, float cellSize)
+    public int GetWidth()
+    {
+        return width;
+    }
+
+
+    public Grid(int width, int height, float cellSize, Vector3 originPosition)
     {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
+        this.originPosition = originPosition;
 
         gridArray = new int[width, height];
         debugTextArray = new TextMesh[width, height];
@@ -65,13 +77,13 @@ public class Grid
     {
         //int xPos = x - 4;
         //int yPos = y - 2;
-        return new Vector3(x, y) * cellSize;
+        return new Vector3(x, y) * cellSize + originPosition;
     }
 
     private void GetXY(Vector3 worldPosition, out int x, out int y)
     {
-        x = Mathf.FloorToInt(worldPosition.x / cellSize);
-        y = Mathf.FloorToInt(worldPosition.y / cellSize);
+        x = Mathf.FloorToInt(worldPosition.x - originPosition.x / cellSize);
+        y = Mathf.FloorToInt(worldPosition.y - originPosition.y / cellSize);
 
     }
 

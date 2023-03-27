@@ -8,10 +8,11 @@ public class TestGrid : MonoBehaviour
 
     private void Start()
     {
-        grid = new Grid(7, 5, 2f);
+        grid = new Grid(7, 5, 2f, new Vector3(-5, 0));
 
     }
 
+  
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
