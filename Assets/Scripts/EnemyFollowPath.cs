@@ -18,7 +18,15 @@ public class EnemyFollowPath : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, Wpoints.waypoints[waypointIndex].position, speed * Time.deltaTime);
         if(Vector2.Distance(transform.position, Wpoints.waypoints[waypointIndex].position) < 0.1f)
         {
+            if (waypointIndex < Wpoints.waypoints.Length - 1)
+            {
             waypointIndex++;
+            }
+
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
     }
