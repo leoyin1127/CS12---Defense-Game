@@ -1,8 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Net.NetworkInformation;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Grid
@@ -12,14 +9,13 @@ public class Grid
     private Vector3 originPosition;
     //multi-dimensional array
     private int[,] gridArray;
-    private float cellSize;
-    private TextMesh[,] debugTextArray;
 
     public int GetHeight()
     {
         return height;
     }
 
+<<<<<<< HEAD
     public int GetWidth()
     {
         return width;
@@ -32,24 +28,24 @@ public class Grid
         this.height = height;
         this.cellSize = cellSize;
         this.originPosition = originPosition;
+=======
+    public Grid(int width, int height)
+    {
+        this.width = width;
+        this.height = height;
+>>>>>>> parent of e6662f0 (Merge)
 
         gridArray = new int[width, height];
-        debugTextArray = new TextMesh[width, height];
-
 
         //figure out size of each dimension by cycling
         for (int x = 0; x < gridArray.GetLength(0); x++)
         {
             for (int y = 0; y < gridArray.GetLength(1); y++)
             {
-                //Debug.Log(x + ", " + y);
-                debugTextArray[x, y] = CreateWorldText(null, gridArray[x, y].ToString(), GetWorldPosition(x, y) + new Vector3(cellSize, cellSize) * .5f, 5, Color.white, TextAnchor.UpperLeft, TextAlignment.Left, 0);
-                UnityEngine.Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x, y + 1), Color.white, 100f);
-                UnityEngine.Debug.DrawLine(GetWorldPosition(x, y), GetWorldPosition(x + 1, y), Color.white, 100f);
-
+                Debug.Log(x + ", " + y);
             }
-        }
 
+<<<<<<< HEAD
         UnityEngine.Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
         UnityEngine.Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
 
@@ -97,32 +93,9 @@ public class Grid
         else
         {
             UnityEngine.Debug.LogError("debugTextArray is null");
+=======
+>>>>>>> parent of e6662f0 (Merge)
         }
     }
 
-    public void SetValue(Vector3 worldPosition, int value)
-    {
-        int x, y;
-        GetXY(worldPosition, out x, out y);
-        SetValue(x, y, value);
-    }
-
-    public int GetValue(int x, int y)
-    {
-        if (x >= 0 && y >= 0 && x < width && y < height && debugTextArray[x, y] != null)
-        {
-            return gridArray[x, y];
-        }
-        else
-        {
-            return 0;
-        }
-    }
-
-    public int GetValue(Vector3 worldPosition)
-    {
-        int x, y;
-        GetXY(worldPosition, out x, out y);
-        return GetValue(x, y);
-    }
 }

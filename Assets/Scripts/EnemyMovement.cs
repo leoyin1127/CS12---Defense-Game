@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     public float Position;
     public float clock;
     public float clock_value;
-    public float speed = 2f; 
+    public float speed = 2; 
     // Start is called before the first frame update
     void Start()
     {
