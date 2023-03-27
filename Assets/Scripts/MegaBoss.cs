@@ -32,14 +32,14 @@ public class MegaBoss : MonoBehaviour
         // DodgeDown
         if (transform.position.y > 3.75f)
         {
-            MoveDown -= 0.1f; 
+            MoveDown -= 0.2f; 
             Move = MoveDown;
         }
 
         // DodgeUp
         if (transform.position.y < -3.75f)
         {
-            MoveUp += 0.1f;
+            MoveUp += 0.2f;
             Move = MoveUp;
         }
 
