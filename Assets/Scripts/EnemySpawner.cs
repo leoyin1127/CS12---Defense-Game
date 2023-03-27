@@ -20,10 +20,19 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
+        timer += 1f * Time.deltaTime;
+        CountDown -= 1f * Time.deltaTime; 
+        Spawn();
+        EndWave(); 
+=======
         timer += 1 * Time.deltaTime;
         Spawn(); 
+>>>>>>> a521c87f111ca5f5c06e1b3e643e8e5f1e4656c6
     }
 
+
+    // Allows Enemy Prefabs to be created based off of a timer.
     void Spawn()
     {
         if (timer >= spawnrate)
@@ -37,4 +46,16 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
+<<<<<<< HEAD
+
+    // Discontinues spawning after a minute 31 seconds.
+    void EndWave()
+    {
+        if (CountDown <= 0f)
+        {
+            spawn = false; 
+        }
+    }
+=======
+>>>>>>> a521c87f111ca5f5c06e1b3e643e8e5f1e4656c6
 }
