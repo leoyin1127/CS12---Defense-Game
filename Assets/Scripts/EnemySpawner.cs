@@ -8,7 +8,9 @@ public class EnemySpawner : MonoBehaviour
     public float spawnrate = 1f;
     private float timer = 0;
     public float HeightOffSet = 3.85f;
-  
+    public float CountDown = 91f;
+    public bool spawn = true; 
+    
 
 
     // Start is called before the first frame update
@@ -20,22 +22,19 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
         timer += 1f * Time.deltaTime;
         CountDown -= 1f * Time.deltaTime; 
         Spawn();
         EndWave(); 
-=======
         timer += 1 * Time.deltaTime;
         Spawn(); 
->>>>>>> a521c87f111ca5f5c06e1b3e643e8e5f1e4656c6
     }
 
 
     // Allows Enemy Prefabs to be created based off of a timer.
     void Spawn()
     {
-        if (timer >= spawnrate)
+        if (timer >= spawnrate && spawn == true)
         {
             float lowestpoint = transform.position.y - HeightOffSet;
             float highestpoint = transform.position.y + HeightOffSet;
@@ -46,7 +45,6 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
-<<<<<<< HEAD
 
     // Discontinues spawning after a minute 31 seconds.
     void EndWave()
@@ -56,6 +54,4 @@ public class EnemySpawner : MonoBehaviour
             spawn = false; 
         }
     }
-=======
->>>>>>> a521c87f111ca5f5c06e1b3e643e8e5f1e4656c6
 }
