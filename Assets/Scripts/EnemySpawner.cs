@@ -27,9 +27,11 @@ public class EnemySpawner : MonoBehaviour
         timer += 1f * Time.deltaTime;
         CountDown -= 1f * Time.deltaTime; 
         Spawn();
-        BossMode(); 
+        EndWave(); 
     }
 
+
+    // Allows Enemy Prefabs to be created based off of a timer.
     void Spawn()
     {
         if (timer >= spawnrate && spawn == true)
@@ -41,7 +43,10 @@ public class EnemySpawner : MonoBehaviour
             timer = 0; 
         }
     }
-    void BossMode()
+
+
+    // Discontinues spawning after a minute 31 seconds.
+    void EndWave()
     {
         if (CountDown <= 0f)
         {
