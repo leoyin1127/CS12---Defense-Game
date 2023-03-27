@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7edd6f807d942cbacd1c07330140f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3000
+  health: 3500
   DeathEffect: {fileID: 643657405597049773, guid: 227eb4be3f3db4d57b0662b69cdf4d71, type: 3}
 --- !u!61 &98385386563693143
 BoxCollider2D:
@@ -140,9 +140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Position: 0
-  clock: 0
-  clock_value: 0
   speed: 0
   MoveDown: 0
   MoveUp: 0
