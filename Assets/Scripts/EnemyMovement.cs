@@ -11,12 +11,12 @@ public class EnemyMovement : MonoBehaviour
     public float Position;
     public float clock;
     public float clock_value;
-    public float speed = 2; 
+    public float speed = 2;
     // Start is called before the first frame update
     void Start()
     {
         Move = 1;
-        clock_value = 1; 
+        clock_value = 1;
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
     {
         clock += clock_value * Time.deltaTime;
         Bobbing();
-        Movement(); 
+        Movement();
     }
 
     public void Bobbing()
@@ -39,14 +39,13 @@ public class EnemyMovement : MonoBehaviour
             Move = 1;
             clock_value = 1;
         }
-        transform.position += Vector3.up * Move * Time.deltaTime/5;
+        transform.position += Vector3.up * Move * Time.deltaTime / 5;
     }
 
     public void Movement() {
 
         transform.position += Vector3.right * speed * Time.deltaTime / 3;
     }
-
 
 }
 

@@ -7,28 +7,15 @@ public class EnemySpawner : MonoBehaviour
     public GameObject Enemy;
     public float spawnrate = 1f;
     private float timer = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public float HeightOffSet = 3.85f;
     public float CountDown = 91f;
-    public bool spawn = true; 
-    
-=======
-=======
->>>>>>> parent of e6662f0 (Merge)
+    public bool spawn = true;  
     public float HeightOffSet = 3.78f;
-    public float CountDown;
-    private bool spawn; 
   
->>>>>>> parent of e6662f0 (Merge)
-
-
+   
     // Start is called before the first frame update
     void Start()
     {
         Spawn();
-        CountDown = 91f;
-        spawn = true; 
     }
 
     // Update is called once per frame
@@ -37,19 +24,7 @@ public class EnemySpawner : MonoBehaviour
         timer += 1f * Time.deltaTime;
         CountDown -= 1f * Time.deltaTime; 
         Spawn();
-<<<<<<< HEAD
         EndWave(); 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        timer += 1 * Time.deltaTime;
-        Spawn(); 
-=======
->>>>>>> parent of e6662f0 (Merge)
-=======
->>>>>>> parent of e6662f0 (Merge)
-=======
-        BossMode(); 
->>>>>>> parent of c5508c8 (Small Change)
     }
 
     void Spawn()
@@ -63,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
             timer = 0; 
         }
     }
-    void BossMode()
+    void EndWave()
     {
         if (CountDown <= 0f)
         {

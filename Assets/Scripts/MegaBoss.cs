@@ -20,7 +20,7 @@ public class MegaBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speed += 0.05f * Time.deltaTime; 
+        speed += 0.1f * Time.deltaTime; 
         Dodge();
         Movement();
     }
@@ -32,14 +32,14 @@ public class MegaBoss : MonoBehaviour
         // DodgeDown
         if (transform.position.y > 3.75f)
         {
-            MoveDown -= 0.1f; 
+            MoveDown -= 0.3f; 
             Move = MoveDown;
         }
 
         // DodgeUp
         if (transform.position.y < -3.75f)
         {
-            MoveUp += 0.1f;
+            MoveUp += 0.3f;
             Move = MoveUp;
         }
 
