@@ -207,6 +207,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &334141818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 334141819}
+  - component: {fileID: 334141821}
+  - component: {fileID: 334141820}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &334141819
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334141818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1167734371}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 564, y: 296}
+  m_SizeDelta: {x: 284.5, y: 128.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &334141820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334141818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.023362402, g: 0.990566, b: 0.052682415, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5cc09d9ba7ce541dcbbbf8ccab251d4f, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press "a" to Skip Songs!
+--- !u!222 &334141821
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334141818}
+  m_CullTransparentMesh: 1
 --- !u!1 &370191660
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &634314166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +672,7 @@ MonoBehaviour:
   Enemy: {fileID: 1055893238156871857, guid: be8f7b9e2312e4c11a95e97088145769, type: 3}
   spawnrate: 1.9
   CountDown: 91
-  spawn: 0
+  spawn: 1
   HeightOffSet: 3.85
 --- !u!4 &634314167
 Transform:
@@ -805,7 +885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &738178795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,9 +899,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 6993224368655370009, guid: c87c8142bd1ef4949bd49827f761c5a1, type: 3}
-  spawnrate: 3
+  spawnrate: 2.5
   CountDown: 91
-  spawn: 0
+  spawn: 1
   HeightOffSet: 3.85
 --- !u!4 &738178796
 Transform:
@@ -902,7 +982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &798395197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,7 +998,7 @@ MonoBehaviour:
   Enemy: {fileID: 8979307319449280475, guid: f6fa1ab0137fc4dafa159fdd2eebc836, type: 3}
   spawnrate: 90
   CountDown: 91
-  spawn: 0
+  spawn: 1
   HeightOffSet: 3.78
 --- !u!4 &798395198
 Transform:
@@ -1311,6 +1391,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2106784222}
+  - {fileID: 334141819}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1571,7 +1652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1614863183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,7 +1668,7 @@ MonoBehaviour:
   Enemy: {fileID: 1654112788199990733, guid: 84f0e39c3a3bc460a85bbb853f34e381, type: 3}
   spawnrate: 6
   CountDown: 91
-  spawn: 0
+  spawn: 1
   HeightOffSet: 3.85
 --- !u!4 &1614863184
 Transform:
