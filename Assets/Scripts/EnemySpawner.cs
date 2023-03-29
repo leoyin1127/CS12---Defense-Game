@@ -7,7 +7,12 @@ public class EnemySpawner : MonoBehaviour
     public GameObject Enemy;
     public float spawnrate = 1f;
     private float timer = 0;
-    public float CountDown = 91f;
+
+
+    public float CountDown = 61f;
+    public float ShopTime = 20f; 
+
+
     public bool spawn = true;  
     public float HeightOffSet = 3.78f;
   
@@ -24,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
         timer += 1f * Time.deltaTime;
         CountDown -= 1f * Time.deltaTime; 
         Spawn();
-        EndWave(); 
+        WaveIndex(); 
     }
 
     void Spawn()
@@ -38,11 +43,17 @@ public class EnemySpawner : MonoBehaviour
             timer = 0; 
         }
     }
-    void EndWave()
+    void WaveIndex()
     {
         if (CountDown <= 0f)
         {
-            spawn = false; 
+            spawn = false;
+            ShopTime -= 1f * Time.deltaTime;
+            if (ShopTime <= 0f)
+            {
+                CountDown = 61f;
+                spawn = true; 
+            }
         }
     }
 }

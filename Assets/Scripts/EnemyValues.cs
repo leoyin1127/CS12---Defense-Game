@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 
 public class EnemyValues : MonoBehaviour
 {
-
+    //public Text HealthText;
     public int health;
     public GameObject DeathEffect;
 
@@ -18,6 +18,7 @@ public class EnemyValues : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        //HealthText.text = (int)health + "HP"; 
         if (health <= 0)
         {
             die();
