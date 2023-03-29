@@ -34,13 +34,13 @@ public class MainChar : MonoBehaviour
         if (Input.GetKey(KeyCode.S) == true)
         {
             _ship.MoveDown();
-            transform.position += Vector3.up * _ship.movedown * Time.deltaTime*4;
+            transform.position += Vector3.up * _ship.movedown * Time.deltaTime * _ship.speed;
         }
-      
+
         if (Input.GetKey(KeyCode.W) == true)
         {
             _ship.MoveUp();
-            transform.position += Vector3.up * _ship.move * Time.deltaTime*4;
+            transform.position += Vector3.up * _ship.move * Time.deltaTime * _ship.speed;
         }
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S) == false)
@@ -58,6 +58,8 @@ public class Ship
     // Attributes
     public float move;
     public float movedown; 
+
+    public float speed = 4f;
    
 
     public Ship(float Move, float MoveDown)
@@ -69,7 +71,6 @@ public class Ship
     {
         movedown = -1f;
     }
-
     public void MoveUp()
     {
         move = 1f;
