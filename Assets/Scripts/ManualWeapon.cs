@@ -10,12 +10,14 @@ public class ManualWeapon : MonoBehaviour
     public GameObject BulletPrefab;
     public float timer;
     public float cooldown; 
-     
+    
+    private WeaponController weaponController;
 
     void Start()
     {
         timer = 0f;
         cooldown = 0.4f;
+        weaponController = FindObjectOfType<WeaponController>();
     }
 
     // Update is called once per frame
@@ -48,7 +50,11 @@ public class ManualWeapon : MonoBehaviour
     // Bullet Function 
     void Shoot()
     {
-        Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
+        GameObject newBullet = Instantiate(BulletPrefab, FirePoint.position, FirePoint.rotation);
+
+        // Initialize the bullet with the damage value from the WeaponController
+        BulletScript bulletScript = newBullet.GetComponent<BulletScript>();
+        bulletScript.InitializeBullet(weaponController.damage);
     }
 
     void Clock()
