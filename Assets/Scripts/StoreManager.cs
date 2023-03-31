@@ -62,7 +62,7 @@ public class StoreManager : MonoBehaviour
         if (playerMoney >= speedUpgradePrice)
         {
             playerMoney -= speedUpgradePrice;
-            // Implement the logic to increase the player's moving speed by percentage.
+            // Implement the logic to increase the player's moving speed by percentage
             // Update the Ship speed variable in MainChar script.
             MainChar mainChar = FindObjectOfType<MainChar>();
             mainChar.ShipInstance.speed *= (1 + speedUpgradePercent);
@@ -77,11 +77,13 @@ public class StoreManager : MonoBehaviour
         if (playerMoney >= damageUpgradePrice)
         {
             playerMoney -= damageUpgradePrice;
-            UpdateMoneyText();
             // Implement the logic to increase the player's damage by percentage.
-            // Assuming you have a PlayerController script with a damage variable:
-            // PlayerController playerController = FindObjectOfType<PlayerController>();
-            // playerController.damage *= (1 + damageUpgradePercent);
+            
+            WeaponController weaponController = FindObjectOfType<WeaponController>();
+            Debug.Log($"player damge: {weaponController.damage}");
+            weaponController.damage *= (1 + damageUpgradePercent);
+            
+            UpdateMoneyText();
         }
     }
 
@@ -92,9 +94,9 @@ public class StoreManager : MonoBehaviour
             playerMoney -= fireRateUpgradePrice;
             UpdateMoneyText();
             // Implement the logic to increase the player's firing speed by percentage.
-            // Assuming you have a PlayerController script with a fireRate variable:
-            // PlayerController playerController = FindObjectOfType<PlayerController>();
-            // playerController.fireRate *= (1 + fireRateUpgradePercent);
+            // Assuming you have a WeaponController script with a fireRate variable:
+            ManualWeapon manualWeapon = FindObjectOfType<ManualWeapon>();
+            manualWeapon.cooldown *= (1 - fireRateUpgradePercent);
         }
     }
 

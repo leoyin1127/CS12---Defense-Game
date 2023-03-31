@@ -8,7 +8,7 @@ public class BulletScript : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     private float clock;
-    public int damage = 40;
+    public float damage = 40;
     public GameObject impactEffect; 
 
     // Start is called before the first frame update
@@ -49,6 +49,11 @@ public class BulletScript : MonoBehaviour
         {
             Destroy(gameObject); 
         }
+    }
 
+    // Initialize bullet damage
+    public void InitializeBullet(float damageValue)
+    {
+        damage = damageValue;
     }
 }

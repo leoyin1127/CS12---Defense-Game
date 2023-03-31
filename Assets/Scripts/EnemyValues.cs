@@ -7,7 +7,7 @@ using UnityEngine;
 public class EnemyValues : MonoBehaviour
 {
 
-    public int health;
+    public float health;
     public GameObject DeathEffect;
 
     void Update()
@@ -15,7 +15,7 @@ public class EnemyValues : MonoBehaviour
         EndGoal();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0)
