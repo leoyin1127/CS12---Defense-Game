@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4315948061513829715}
   - component: {fileID: 1288335082721125138}
-  - component: {fileID: 2066926986751450679}
   - component: {fileID: 3218423379507468599}
   - component: {fileID: 7280627397741271611}
+  - component: {fileID: 6773526111862902621}
   m_Layer: 0
   m_Name: TankyInvader
   m_TagString: Untagged
@@ -87,23 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2066926986751450679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654112788199990733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdfe0ffb9cfaf4b839cabd1280354b91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Move: 0
-  Position: 0
-  clock: 0
-  clock_value: 0
-  speed: 0.8
 --- !u!114 &3218423379507468599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +117,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.06}
   serializedVersion: 2
   m_Radius: 1.35
+--- !u!114 &6773526111862902621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654112788199990733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845216e4e5e23ef40a277cfc45570c2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Move: 0
+  Position: 0
+  clock: 0
+  clock_value: 0
+  speed: 0.8
