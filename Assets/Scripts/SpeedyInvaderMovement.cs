@@ -9,6 +9,7 @@ public class SpeedyInvaderMovement : MonoBehaviour
     public float clock;
     public float clock_value;
     public float speed = 2;
+    public static bool allowmove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +20,12 @@ public class SpeedyInvaderMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        clock += clock_value * Time.deltaTime;
-        Bobbing();
-        Movement();
+        if (allowmove = true)
+        {
+            clock += clock_value * Time.deltaTime;
+            Bobbing();
+            Movement();
+        }
     }
 
     public void Bobbing()

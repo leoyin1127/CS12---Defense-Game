@@ -9,7 +9,15 @@ public class InvaderMovement : MonoBehaviour
     public float clock;
     public float clock_value;
     public float speed = 2;
+    public static bool allowmove = false;
+    private WaveIndex wave;
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        wave = FindObjectOfType<WaveIndex>();
+    }
+
     void Start()
     {
         Move = 1;
@@ -19,9 +27,24 @@ public class InvaderMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        clock += clock_value * Time.deltaTime;
-        Bobbing();
-        Movement();
+
+        CheckWave();
+        
+    }
+
+    public void CheckWave()
+    {
+        Debug.Log(WaveIndex.Waveindex);
+        if (WaveIndex.Waveindex >= 2)
+        {
+            allowmove = true;
+            if (allowmove == true)
+            {
+                clock += clock_value * Time.deltaTime;
+                Bobbing();
+                Movement();
+            }
+        }
     }
 
     public void Bobbing()

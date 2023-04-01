@@ -7,10 +7,15 @@ public class EnemySpawner : MonoBehaviour
     public GameObject Enemy;
     public float spawnrate = 1f;
     private float timer = 0;
-    public float CountDown = 91f;
+    public float CountDown = 45f;
     public static bool spawn = true;
     public float HeightOffSet = 3.78f;
+    private WaveIndex wavespawn;
 
+    void Awake()
+    {
+        wavespawn = FindObjectOfType<WaveIndex>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
         timer += 1f * Time.deltaTime;
         CountDown -= 1f * Time.deltaTime; 
         Spawn();
-        EndWave(); 
+        EndWave();
     }
 
     void Spawn()
@@ -43,9 +48,13 @@ public class EnemySpawner : MonoBehaviour
         if (CountDown <= 0f)
         {
             spawn = false;
-            CountDown = 91f;
+            CountDown = 45f;
+            spawnrate *= 0.95f;
+            Debug.Log(spawnrate);
         }
+
     }
+
 }
 
 //public class EnemySpawner : MonoBehaviour
