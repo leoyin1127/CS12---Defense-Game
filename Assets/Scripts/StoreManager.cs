@@ -110,7 +110,7 @@ public class StoreManager : MonoBehaviour
             playerMoney -= addLaserGunPrice;
             UpdateMoneyText();
             ButtonDown = true;
-            print("1");
+            print("11");
             // Implement the logic to add a laser gun into the scene.
         }
     }

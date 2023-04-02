@@ -20,7 +20,7 @@ public class SpeedyInvaderMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (allowmove = true)
+        if (allowmove == true)
         {
             clock += clock_value * Time.deltaTime;
             Bobbing();

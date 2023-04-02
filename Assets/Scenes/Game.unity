@@ -1425,7 +1425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 502dd35458fb749e6ade382a6dc3a125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaserGun: {fileID: 0}
+  LaserGun: {fileID: 9210748504328666092, guid: 87031dbc06cb94854b3b0c264186ef4d, type: 3}
 --- !u!114 &741155937
 MonoBehaviour:
   m_ObjectHideFlags: 0
