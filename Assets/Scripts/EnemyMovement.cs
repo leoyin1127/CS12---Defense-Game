@@ -42,7 +42,8 @@ public class EnemyMovement : MonoBehaviour
         transform.position += Vector3.up * Move * Time.deltaTime / 5;
     }
 
-    public void Movement() {
+    public void Movement()
+    {
 
         transform.position += Vector3.right * speed * Time.deltaTime / 3;
     }

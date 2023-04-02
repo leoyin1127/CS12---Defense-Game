@@ -32,6 +32,8 @@ public class StoreManager : MonoBehaviour
     public int playerMoney = 100000;
     public Text moneyText;
 
+    public bool ButtonDown = false;
+
     void Start()
     {
         speedUpgradeButton.onClick.AddListener(() => UpgradeSpeed());
@@ -102,10 +104,13 @@ public class StoreManager : MonoBehaviour
 
     void AddLaserGun()
     {
+
         if (playerMoney >= addLaserGunPrice)
         {
             playerMoney -= addLaserGunPrice;
             UpdateMoneyText();
+            ButtonDown = true;
+            print("1");
             // Implement the logic to add a laser gun into the scene.
         }
     }
