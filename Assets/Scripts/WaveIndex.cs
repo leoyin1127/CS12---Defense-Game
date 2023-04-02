@@ -27,18 +27,6 @@ public class WaveIndex : MonoBehaviour
         NewWave();
     }
 
-    //void FirstWave()
-    //{
-    //    Debug.Log("Firstwave");
-    //    if (Waveindex == 1)
-    //    {
-    //        Debug.Log("waveindex = 1");
-    //        InvaderMovement.allowmove = false;
-    //        Debug.Log(InvaderMovement.allowmove);
-    //        TankyInvaderMovement.allowmove = false;
-    //    }
-    //}
-
     void NewWave()
     {
         if (EnemySpawner.spawn == false)
