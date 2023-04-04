@@ -22,14 +22,15 @@ public class StoreManager : MonoBehaviour
     public float laserFireRateUpgradePercent = 0.05f;
 
     // Prices for upgrades and items
-    public int speedUpgradePrice = 50;
-    public int damageUpgradePrice = 75;
-    public int fireRateUpgradePrice = 100;
-    public int addLaserGunPrice = 150;
-    public int laserDamageUpgradePrice = 125;
-    public int laserFireRateUpgradePrice = 150;
+    public float speedUpgradePrice = 50f;
+    public float damageUpgradePrice = 75f;
+    public float fireRateUpgradePrice = 100f;
+    public float addLaserGunPrice = 150f;
+    public float laserDamageUpgradePrice = 125f;
+    public float laserFireRateUpgradePrice = 150f;
 
-    public int playerMoney = 0;
+    public float playerMoney = 0;
+
     public Text moneyText;
 
     public bool ButtonDown = false;
@@ -70,6 +71,7 @@ public class StoreManager : MonoBehaviour
             mainChar.ShipInstance.speed *= (1 + speedUpgradePercent);
             Debug.Log("speed up");
             UpdateMoneyText();
+            speedUpgradePrice *= 1.1f;
         }
     }
 
@@ -86,6 +88,7 @@ public class StoreManager : MonoBehaviour
             weaponController.damage *= (1 + damageUpgradePercent);
             
             UpdateMoneyText();
+            damageUpgradePrice *= 1.1f;
         }
     }
 
@@ -99,6 +102,7 @@ public class StoreManager : MonoBehaviour
             // Assuming you have a WeaponController script with a fireRate variable:
             ManualWeapon manualWeapon = FindObjectOfType<ManualWeapon>();
             manualWeapon.cooldown *= (1 - fireRateUpgradePercent);
+            fireRateUpgradePrice *= 1.1f;
         }
     }
 
@@ -111,6 +115,7 @@ public class StoreManager : MonoBehaviour
             UpdateMoneyText();
             ButtonDown = true;
             print("11");
+            addLaserGunPrice *= 1.1f;
             // Implement the logic to add a laser gun into the scene.
         }
     }
@@ -127,6 +132,7 @@ public class StoreManager : MonoBehaviour
             // {
             //     laserGunController.damage *= (1 + laserDamageUpgradePercent);
             // }
+            laserDamageUpgradePrice *= 1.1f;
         }
     }
 
@@ -143,6 +149,7 @@ public class StoreManager : MonoBehaviour
             // {
             //     laserGunController.fireRate *= (1 + laserFireRateUpgradePercent);
             // }
+            laserFireRateUpgradePrice *= 1.1f;
         }
     }
 
