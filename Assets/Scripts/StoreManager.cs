@@ -15,11 +15,11 @@ public class StoreManager : MonoBehaviour
     public Button laserFireRateUpgradeButton;
 
     // Percentage increase for upgrades
-    public float speedUpgradePercent = 0.1f;
-    public float damageUpgradePercent = 0.1f;
-    public float fireRateUpgradePercent = 0.1f;
-    public float laserDamageUpgradePercent = 0.1f;
-    public float laserFireRateUpgradePercent = 0.1f;
+    public float speedUpgradePercent = 0.05f;
+    public float damageUpgradePercent = 0.05f;
+    public float fireRateUpgradePercent = 0.05f;
+    public float laserDamageUpgradePercent = 0.05f;
+    public float laserFireRateUpgradePercent = 0.05f;
 
     // Prices for upgrades and items
     public int speedUpgradePrice = 50;
@@ -29,7 +29,7 @@ public class StoreManager : MonoBehaviour
     public int laserDamageUpgradePrice = 125;
     public int laserFireRateUpgradePrice = 150;
 
-    public int playerMoney = 100000;
+    public int playerMoney = 0;
     public Text moneyText;
 
     public bool ButtonDown = false;
