@@ -34,7 +34,7 @@ public class InvaderMovement : MonoBehaviour
 
     public void CheckWave()
     {
-        Debug.Log(WaveIndex.Waveindex);
+        //Debug.Log(WaveIndex.Waveindex);
         if (WaveIndex.Waveindex >= 2)
         {
             allowmove = true;
