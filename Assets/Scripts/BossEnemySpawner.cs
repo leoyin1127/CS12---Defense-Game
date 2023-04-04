@@ -34,14 +34,14 @@ public class BossEnemySpawner : MonoBehaviour
 
     void CheckSpawn()
     {
-        Debug.Log(WaveIndex.Waveindex);
+        //Debug.Log(WaveIndex.Waveindex);
         if (WaveIndex.Waveindex >= 4)
         {
             allowspawn = true;
             if (allowspawn == true)
             {
                 timer += 1f * Time.deltaTime;
-                Debug.Log("invader spawn");
+                //Debug.Log("invader spawn");
                 Spawn();
             }
         }

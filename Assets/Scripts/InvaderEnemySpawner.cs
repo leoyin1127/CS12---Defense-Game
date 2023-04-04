@@ -35,13 +35,13 @@ public class InvaderEnemySpawner : MonoBehaviour
 
     void CheckSpawn()
     {
-        Debug.Log(WaveIndex.Waveindex);
+        //Debug.Log(WaveIndex.Waveindex);
         if (WaveIndex.Waveindex >= 2)
         {
             allowspawn = true;
             if (allowspawn == true)
             {
-                Debug.Log("invader spawn");
+                //Debug.Log("invader spawn");
                 Spawn();
             }
         }
@@ -51,7 +51,7 @@ public class InvaderEnemySpawner : MonoBehaviour
     {
         if (timer >= spawnrate && spawn == true)
         {
-            Debug.Log("invader spawn spawn");
+            //Debug.Log("invader spawn spawn");
             float lowestpoint = transform.position.y - HeightOffSet;
             float highestpoint = transform.position.y + HeightOffSet;
 
@@ -64,7 +64,7 @@ public class InvaderEnemySpawner : MonoBehaviour
         if (CountDown <= 0f)
         {
             spawn = false;
-            Debug.Log(WaveIndex.Waveindex);
+            //Debug.Log(WaveIndex.Waveindex);
             if (WaveIndex.Waveindex >= 2)
             {
                 CountDown = 45f;
