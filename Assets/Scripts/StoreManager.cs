@@ -153,7 +153,7 @@ public class StoreManager : MonoBehaviour
             laserFireRateUpgradePrice *= 1.1f;
         }
     }
-    
+
     void OnDestroy()
     {
         EnemyValues.OnEnemyKilled -= IncreasePlayerMoney;
@@ -163,6 +163,7 @@ public class StoreManager : MonoBehaviour
     {
         playerMoney += cashAmount;
         UpdateMoneyText();
+        Debug.LogWarning($"Player money increased by {cashAmount}");
     }
 
 }

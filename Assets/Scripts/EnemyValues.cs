@@ -15,11 +15,14 @@ public class EnemyValues : MonoBehaviour
     public GameObject DeathEffect;
     public float Cash_Amount;
     public static event Action<float> OnEnemyKilled; 
+    
+
 
 
     void Start()
     {
         _enemy = new Enemy(health, Cash_Amount); 
+
     }
 
     public Enemy EnemyInstance {
@@ -40,6 +43,7 @@ public class EnemyValues : MonoBehaviour
             die();
             // StoreManager manager = FindObjectOfType<StoreManager>();
             // manager.playerMoney += (_enemy.cash_amount);
+            Debug.LogWarning("Enemy died, triggering event");
         }
 
     }
