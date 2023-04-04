@@ -36,9 +36,9 @@ public class EnemyValues : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            die();
             StoreManager manager = FindObjectOfType<StoreManager>();
             manager.playerMoney += (_enemy.cash_amount);
+            die();
         }
 
     }
@@ -71,6 +71,6 @@ public class Enemy
     }
     public void CashAmount() {
 
-        cash_amount = 10f; 
+        cash_amount = 10; 
     }
 }
