@@ -50,7 +50,7 @@ public class EnemySpawner : MonoBehaviour
             spawn = false;
             CountDown = 45f;
             spawnrate *= 0.95f;
-            Debug.Log(spawnrate);
+            //Debug.Log(spawnrate);
         }
 
     }

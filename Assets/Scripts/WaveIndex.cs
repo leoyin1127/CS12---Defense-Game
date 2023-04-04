@@ -13,7 +13,7 @@ public class WaveIndex : MonoBehaviour
 
     void Awake()
     {
-        //Debug.Log(Waveindex);
+        Debug.Log(Waveindex);
         timer = FindObjectOfType<EnemySpawner>();
         speedyinvader = FindObjectOfType<SpeedyInvaderMovement>();
         invader = FindObjectOfType<InvaderMovement>();
@@ -35,7 +35,7 @@ public class WaveIndex : MonoBehaviour
             Waveindex += 1;
             Debug.Log(Waveindex);
             EnemySpawner.spawn = true;
-            Debug.Log(EnemySpawner.spawn);
+            //Debug.Log(EnemySpawner.spawn);
 
            
         }
