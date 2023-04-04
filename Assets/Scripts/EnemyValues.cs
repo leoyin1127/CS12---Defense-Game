@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 
@@ -13,7 +14,7 @@ public class EnemyValues : MonoBehaviour
     public float health;
     public GameObject DeathEffect;
     public float Cash_Amount;
-
+    public static event Action<float> OnEnemyKilled; 
 
 
     void Start()
@@ -37,8 +38,8 @@ public class EnemyValues : MonoBehaviour
         if (health <= 0)
         {
             die();
-            StoreManager manager = FindObjectOfType<StoreManager>();
-            manager.playerMoney += (_enemy.cash_amount);
+            // StoreManager manager = FindObjectOfType<StoreManager>();
+            // manager.playerMoney += (_enemy.cash_amount);
         }
 
     }
@@ -47,6 +48,10 @@ public class EnemyValues : MonoBehaviour
     {
         Instantiate(DeathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        if (OnEnemyKilled != null) // Add this if statement
+        {
+            OnEnemyKilled(_enemy.cash_amount);
+        }
     }
     void EndGoal()
     {
@@ -56,6 +61,7 @@ public class EnemyValues : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
 }
 
 
@@ -67,8 +73,9 @@ public class Enemy
     public Enemy(float HP, float Cash_Amount)
     {
         health = HP;
-        Cash_Amount = cash_amount;
+        cash_amount = Cash_Amount; // corrected assignment
     }
+
     public void CashAmount() {
 
         cash_amount = 10f; 

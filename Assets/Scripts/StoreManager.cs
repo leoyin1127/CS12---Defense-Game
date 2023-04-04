@@ -43,6 +43,7 @@ public class StoreManager : MonoBehaviour
         addLaserGunButton.onClick.AddListener(() => AddLaserGun());
         laserDamageUpgradeButton.onClick.AddListener(() => UpgradeLaserDamage());
         laserFireRateUpgradeButton.onClick.AddListener(() => UpgradeLaserFireRate());
+        EnemyValues.OnEnemyKilled += IncreasePlayerMoney;
         UpdateMoneyText();
     }
     private void UpdateMoneyText()
@@ -151,6 +152,17 @@ public class StoreManager : MonoBehaviour
             // }
             laserFireRateUpgradePrice *= 1.1f;
         }
+    }
+    
+    void OnDestroy()
+    {
+        EnemyValues.OnEnemyKilled -= IncreasePlayerMoney;
+    }
+
+    void IncreasePlayerMoney(float cashAmount)
+    {
+        playerMoney += cashAmount;
+        UpdateMoneyText();
     }
 
 }
