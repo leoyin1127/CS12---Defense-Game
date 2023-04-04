@@ -38,7 +38,7 @@ public class EnemyValues : MonoBehaviour
         {
             die();
             StoreManager manager = FindObjectOfType<StoreManager>();
-            manager.playerMoney += ();
+            manager.playerMoney += (_enemy.cash_amount);
         }
 
     }
@@ -62,7 +62,7 @@ public class EnemyValues : MonoBehaviour
 public class Enemy
 {
     public float health;
-    public float cash_amount = 10;
+    public float cash_amount;
 
     public Enemy(float HP, float Cash_Amount)
     {
@@ -71,6 +71,6 @@ public class Enemy
     }
     public void CashAmount() {
 
-
+        cash_amount = 10f; 
     }
 }
