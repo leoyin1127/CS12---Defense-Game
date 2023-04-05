@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 500
   DeathEffect: {fileID: 643657405597049773, guid: 227eb4be3f3db4d57b0662b69cdf4d71, type: 3}
-  Cash_Amount: 10
+  Cash_Amount: 50
 --- !u!58 &7280627397741271611
 CircleCollider2D:
   m_ObjectHideFlags: 0
