@@ -13,6 +13,12 @@ public class StoreManager : MonoBehaviour
     public Button addLaserGunButton;
     public Button laserDamageUpgradeButton;
     public Button laserFireRateUpgradeButton;
+    private int Upgrade_max = 10;
+    private int current_speed_level = 0;
+    private int current_damage_level = 0;
+    private int current_fireRate_level = 0;
+    private int current_laserDamage_level = 0; 
+    private int current_laserFireRate_level = 0;
 
     // Percentage increase for upgrades
     public float speedUpgradePercent = 0.05f;
@@ -63,8 +69,9 @@ public class StoreManager : MonoBehaviour
 
     void UpgradeSpeed()
     {
-        if (playerMoney >= speedUpgradePrice)
+        if (playerMoney >= speedUpgradePrice && current_speed_level < Upgrade_max)
         {
+            current_speed_level++;
             playerMoney -= speedUpgradePrice;
             // Implement the logic to increase the player's moving speed by percentage
             // Update the Ship speed variable in MainChar script.
@@ -78,8 +85,9 @@ public class StoreManager : MonoBehaviour
 
     void UpgradeDamage()
     {
-        if (playerMoney >= damageUpgradePrice)
+        if (playerMoney >= damageUpgradePrice && current_damage_level < Upgrade_max)
         {
+            current_damage_level++;
             playerMoney -= damageUpgradePrice;
             // Implement the logic to increase the player's damage by percentage.
             
@@ -93,8 +101,9 @@ public class StoreManager : MonoBehaviour
 
     void UpgradeFireRate()
     {
-        if (playerMoney >= fireRateUpgradePrice)
+        if (playerMoney >= fireRateUpgradePrice && current_fireRate_level < Upgrade_max)
         {
+            current_fireRate_level++;
             playerMoney -= fireRateUpgradePrice;
             UpdateMoneyText();
             // Implement the logic to increase the player's firing speed by percentage.
@@ -119,8 +128,9 @@ public class StoreManager : MonoBehaviour
 
     void UpgradeLaserDamage()
     {
-        if (playerMoney >= laserDamageUpgradePrice)
+        if (playerMoney >= laserDamageUpgradePrice && current_laserDamage_level < Upgrade_max)
         {
+            current_laserDamage_level++;
             playerMoney -= laserDamageUpgradePrice;
             UpdateMoneyText();
             // Implement the logic to increase the laser gun's damage.
@@ -134,8 +144,9 @@ public class StoreManager : MonoBehaviour
 
     void UpgradeLaserFireRate()
     {
-        if (playerMoney >= laserFireRateUpgradePrice)
+        if (playerMoney >= laserFireRateUpgradePrice && current_laserFireRate_level < Upgrade_max)
         {
+            current_laserFireRate_level++;
             playerMoney -= laserFireRateUpgradePrice;
             UpdateMoneyText();
             // Implement the logic to increase the laser gun's firing speed by percentage.
