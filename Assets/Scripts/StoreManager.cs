@@ -72,7 +72,6 @@ public class StoreManager : MonoBehaviour
             mainChar.ShipInstance.speed *= (1 + speedUpgradePercent);
             Debug.Log("speed up");
             UpdateMoneyText();
-            speedUpgradePrice *= 1.1f;
         }
     }
 
@@ -89,7 +88,6 @@ public class StoreManager : MonoBehaviour
             weaponController.damage *= (1 + damageUpgradePercent);
             
             UpdateMoneyText();
-            damageUpgradePrice *= 1.1f;
         }
     }
 
@@ -103,7 +101,6 @@ public class StoreManager : MonoBehaviour
             // Assuming you have a WeaponController script with a fireRate variable:
             ManualWeapon manualWeapon = FindObjectOfType<ManualWeapon>();
             manualWeapon.cooldown *= (1 - fireRateUpgradePercent);
-            fireRateUpgradePrice *= 1.1f;
         }
     }
 
@@ -116,7 +113,6 @@ public class StoreManager : MonoBehaviour
             UpdateMoneyText();
             ButtonDown = true;
             print("11");
-            addLaserGunPrice *= 1.1f;
             // Implement the logic to add a laser gun into the scene.
         }
     }
@@ -133,7 +129,6 @@ public class StoreManager : MonoBehaviour
             // {
             //     laserGunController.damage *= (1 + laserDamageUpgradePercent);
             // }
-            laserDamageUpgradePrice *= 1.1f;
         }
     }
 
@@ -150,7 +145,6 @@ public class StoreManager : MonoBehaviour
             // {
             //     laserGunController.fireRate *= (1 + laserFireRateUpgradePercent);
             // }
-            laserFireRateUpgradePrice *= 1.1f;
         }
     }
 
