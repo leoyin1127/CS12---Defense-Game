@@ -3364,7 +3364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c25a2779ec56ab4ea64f99366aa1f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveIndexText: {fileID: 0}
+  WaveIndexText: {fileID: 4261289}
 --- !u!4 &2138625308
 Transform:
   m_ObjectHideFlags: 0
