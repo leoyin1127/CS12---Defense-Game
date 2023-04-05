@@ -21,7 +21,6 @@ public class WaveIndex : MonoBehaviour
         invader = FindObjectOfType<InvaderMovement>();
         tankyinvader = FindObjectOfType<TankyInvaderMovement>();
         WaveIndexText.text = "Wave Index: " + Waveindex.ToString();
-        WaveIndexText.gameObject.SetActive(true);
     }
 
     void Update()
