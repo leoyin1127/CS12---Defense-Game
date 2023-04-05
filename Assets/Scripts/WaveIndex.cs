@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class WaveIndex : MonoBehaviour
 {
@@ -9,7 +11,9 @@ public class WaveIndex : MonoBehaviour
     private SpeedyInvaderMovement speedyinvader;
     private InvaderMovement invader;
     private TankyInvaderMovement tankyinvader;
-   //ublic bool movedAllowed = false;
+
+    //public TextMeshProUGUI WaveIndexText;
+    
 
     void Awake()
     {
@@ -18,7 +22,9 @@ public class WaveIndex : MonoBehaviour
         speedyinvader = FindObjectOfType<SpeedyInvaderMovement>();
         invader = FindObjectOfType<InvaderMovement>();
         tankyinvader = FindObjectOfType<TankyInvaderMovement>();
-       
+        //WaveIndexText.text = "Wave Index: " + Waveindex;
+        //WaveIndexText.gameObject.SetActive(true);
+
     }
 
 
@@ -34,10 +40,8 @@ public class WaveIndex : MonoBehaviour
 
             Waveindex += 1;
             Debug.Log(Waveindex);
-            EnemySpawner.spawn = true;
-            //Debug.Log(EnemySpawner.spawn);
-
-           
+            //WaveIndexText.text = "Wave Index: " + Waveindex;
+            EnemySpawner.spawn = true;           
         }
     }
 
