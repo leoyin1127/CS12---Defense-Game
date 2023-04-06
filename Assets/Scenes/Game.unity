@@ -981,7 +981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 634314167}
-  - component: {fileID: 634314168}
+  - component: {fileID: 634314169}
   m_Layer: 0
   m_Name: RegSpawner
   m_TagString: Untagged
@@ -1004,7 +1004,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &634314168
+--- !u!114 &634314169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 634314165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91343b949bdb50641b2155704c70ae75, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aa8021aaea1e43dcbbdb3167fafd282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1055893238156871857, guid: be8f7b9e2312e4c11a95e97088145769, type: 3}
@@ -1358,7 +1358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 738178796}
-  - component: {fileID: 738178795}
+  - component: {fileID: 738178797}
   m_Layer: 0
   m_Name: SpeedySpawner
   m_TagString: Untagged
@@ -1366,22 +1366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &738178795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 738178794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa8021aaea1e43dcbbdb3167fafd282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Enemy: {fileID: 6993224368655370009, guid: c87c8142bd1ef4949bd49827f761c5a1, type: 3}
-  spawnrate: 2.5
-  CountDown: 45
-  HeightOffSet: 3.85
 --- !u!4 &738178796
 Transform:
   m_ObjectHideFlags: 0
@@ -1397,6 +1381,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &738178797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738178794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91343b949bdb50641b2155704c70ae75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 6993224368655370009, guid: c87c8142bd1ef4949bd49827f761c5a1, type: 3}
+  spawnrate: 2.5
+  CountDown: 45
+  HeightOffSet: 3.85
 --- !u!1 &738736876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,9 +2694,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1654112788199990733, guid: 84f0e39c3a3bc460a85bbb853f34e381, type: 3}
-  spawnrate: 6
-  CountDown: 45
-  HeightOffSet: 3.85
 --- !u!1 &1688843092
 GameObject:
   m_ObjectHideFlags: 0

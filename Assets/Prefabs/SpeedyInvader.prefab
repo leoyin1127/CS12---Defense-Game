@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5291201280270249596}
   - component: {fileID: 7987421047588831767}
   - component: {fileID: 4472298019763627253}
-  - component: {fileID: -3340499316881017844}
+  - component: {fileID: -7229436165164817305}
   m_Layer: 0
   m_Name: SpeedyInvader
   m_TagString: Untagged
@@ -118,7 +118,7 @@ MonoBehaviour:
   health: 80
   DeathEffect: {fileID: 643657405597049773, guid: 227eb4be3f3db4d57b0662b69cdf4d71, type: 3}
   Cash_Amount: 50
---- !u!114 &-3340499316881017844
+--- !u!114 &-7229436165164817305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6993224368655370009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3af6df32f3fba848b024991b8681a56, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c4dc20f74f21c244a6d1acd286d8108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0

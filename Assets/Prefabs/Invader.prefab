@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1055893238156871886}
   - component: {fileID: 1055893238156871884}
   - component: {fileID: 1055893238156871859}
-  - component: {fileID: 8896211187421766229}
+  - component: {fileID: 8412093205488646929}
   m_Layer: 0
   m_Name: Invader
   m_TagString: Untagged
@@ -118,7 +118,7 @@ CircleCollider2D:
   m_Offset: {x: -0.01, y: -0.01}
   serializedVersion: 2
   m_Radius: 1.35
---- !u!114 &8896211187421766229
+--- !u!114 &8412093205488646929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055893238156871857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c4dc20f74f21c244a6d1acd286d8108, type: 3}
+  m_Script: {fileID: 11500000, guid: f3af6df32f3fba848b024991b8681a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
