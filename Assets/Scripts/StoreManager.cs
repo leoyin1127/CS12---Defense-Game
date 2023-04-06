@@ -7,12 +7,17 @@ using UnityEngine.UI;
 public class StoreManager : MonoBehaviour
 {
     public GameObject storePanel;
+    public GameObject topGun;
+    public GameObject bottomGun;
     public Button speedUpgradeButton;
     public Button damageUpgradeButton;
     public Button fireRateUpgradeButton;
     public Button addLaserGunButton;
     public Button laserDamageUpgradeButton;
     public Button laserFireRateUpgradeButton;
+    public Button addExtraGun1Button;
+    public Button addExtraGun2Button;
+
     private int Upgrade_max = 10;
     private int current_speed_level = 0;
     private int current_damage_level = 0;
@@ -34,6 +39,9 @@ public class StoreManager : MonoBehaviour
     public float addLaserGunPrice = 150f;
     public float laserDamageUpgradePrice = 125f;
     public float laserFireRateUpgradePrice = 150f;
+    public float addExtraGun1Price = 500f;
+    public float addExtraGun2Price = 500f;
+
 
     public float playerMoney = 0;
 
@@ -49,6 +57,9 @@ public class StoreManager : MonoBehaviour
         addLaserGunButton.onClick.AddListener(() => AddLaserGun());
         laserDamageUpgradeButton.onClick.AddListener(() => UpgradeLaserDamage());
         laserFireRateUpgradeButton.onClick.AddListener(() => UpgradeLaserFireRate());
+        addExtraGun1Button.onClick.AddListener(() => AddExtraGun1());
+        addExtraGun2Button.onClick.AddListener(() => AddExtraGun2());
+
         EnemyValues.OnEnemyKilled += IncreasePlayerMoney;
         UpdateMoneyText();
     }
@@ -156,6 +167,31 @@ public class StoreManager : MonoBehaviour
             // {
             //     laserGunController.fireRate *= (1 + laserFireRateUpgradePercent);
             // }
+        }
+    }
+
+    void AddExtraGun1()
+    {
+        if (playerMoney >= addExtraGun1Price)
+        {
+            playerMoney -= addExtraGun1Price;
+            UpdateMoneyText();
+            addExtraGun1Price *= 1.1f;
+            topGun.SetActive(true);
+            // Implement the logic to add the first extra gun into the scene.
+        }
+    }
+
+    void AddExtraGun2()
+    {
+        if (playerMoney >= addExtraGun2Price)
+        {
+            playerMoney -= addExtraGun2Price;
+            UpdateMoneyText();
+            addExtraGun2Price *= 1.1f;
+
+            // Implement the logic to add the second extra gun into the scene.
+            bottomGun.SetActive(true);
         }
     }
 
