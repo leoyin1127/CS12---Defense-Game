@@ -76,7 +76,7 @@ public class StoreManager : MonoBehaviour
             // Implement the logic to increase the player's moving speed by percentage
             // Update the Ship speed variable in MainChar script.
             MainChar mainChar = FindObjectOfType<MainChar>();
-            mainChar.ShipInstance.speed *= (1 + speedUpgradePercent);
+            mainChar.ShipInstance.Speed *= (1 + speedUpgradePercent);
             Debug.Log("speed up");
             UpdateMoneyText();
         }
